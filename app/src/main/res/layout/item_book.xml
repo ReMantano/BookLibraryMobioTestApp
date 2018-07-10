@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/polk_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/imageBook"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/war" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageBook"
+        app:layout_constraintTop_toBottomOf="@+id/bookName"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imageBook"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Author" />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
